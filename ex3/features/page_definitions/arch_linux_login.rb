@@ -1,10 +1,13 @@
 require 'selenium-webdriver'
 require 'rspec'
 require 'page-object'
+require 'data_magic'
 
 class ArchLinuxLoginPage
   include PageObject
-  
+  include DataMagic
+
+
   text_field(:username, :name => 'req_username')
   text_field(:password, :name => 'req_password')
   button(:submit, :name => 'login')
@@ -13,13 +16,15 @@ class ArchLinuxLoginPage
     navigate_to 'https://bbs.archlinux.org/login.php'
   end
 
+  def pop_page(scenario)
+    populate_page_with data_for 'login_data/' + scenario
+  end
+
   def is_logged_in?
     @browser.find_elements(:class, 'error-list').empty?
   end
 
-  def login_with_credentials(uname, passwd)
-    self.username = uname
-    self.password = passwd
+  def login_with_credentials
     submit
   end
 end

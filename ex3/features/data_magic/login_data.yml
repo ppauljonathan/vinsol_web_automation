@@ -1,0 +1,15 @@
+all_correct:
+  username: 'jonathan_arch_linux_user'
+  password: 'nFUUmemQezSD'
+
+username_wrong:
+  username: 'hjijhnfd'
+  password: 'nFUUmemQezSD'
+
+password_wrong:
+  username: 'jonathan_arch_linux_user'
+  password: 'kijknjkhnj'
+
+both_wrong:
+  username: 'fghjuytgfvb'
+  password: 'fgthyjkiujyhgvb'

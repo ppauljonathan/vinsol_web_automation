@@ -6,7 +6,8 @@ Given('We are on arch linux login page') do
 end
 
 When('We login with correct username and password') do
-  @arch_linux_login.login_with_credentials('jonathan_arch_linux_user', 'nFUUmemQezSD')
+  @arch_linux_login.pop_page('all_correct')
+  @arch_linux_login.login_with_credentials
   sleep(10)
 end
 
@@ -15,7 +16,8 @@ Then('We are redirected to login page') do
 end
 
 When('We login with incorrect username') do
-  @arch_linux_login.login_with_credentials('hello', 'nFUUmemQezSD')
+  @arch_linux_login.pop_page('username_wrong')
+  @arch_linux_login.login_with_credentials
 end
 
 Then('We are redirected to error page') do
@@ -23,10 +25,12 @@ Then('We are redirected to error page') do
 end
 
 When('We login with incorrect password') do
-  @arch_linux_login.login_with_credentials('jonathan_arch_linux_user', 'fdhsuaiiudjkf')
+  @arch_linux_login.pop_page('password_wrong')
+  @arch_linux_login.login_with_credentials
 end
 
 When('We login with incorrect username and password') do
-  @arch_linux_login.login_with_credentials('hello', 'dssfjkldsdf')
+  @arch_linux_login.pop_page('both_wrong')
+  @arch_linux_login.login_with_credentials
 end
 
