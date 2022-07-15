@@ -1,0 +1,55 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    childprocess (4.1.0)
+    concurrent-ruby (1.1.10)
+    data_magic (1.2)
+      faker (>= 1.1.2)
+      yml_reader (>= 0.6)
+    diff-lcs (1.5.0)
+    faker (2.21.0)
+      i18n (>= 1.8.11, < 2)
+    i18n (1.11.0)
+      concurrent-ruby (~> 1.0)
+    page-object (2.3.1)
+      page_navigation (>= 0.10)
+      watir (>= 6.10.3)
+    page_navigation (0.10)
+      data_magic (>= 0.22)
+    regexp_parser (2.5.0)
+    rexml (3.2.5)
+    rspec (3.11.0)
+      rspec-core (~> 3.11.0)
+      rspec-expectations (~> 3.11.0)
+      rspec-mocks (~> 3.11.0)
+    rspec-core (3.11.0)
+      rspec-support (~> 3.11.0)
+    rspec-expectations (3.11.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.11.0)
+    rspec-mocks (3.11.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.11.0)
+    rspec-support (3.11.0)
+    rubyzip (2.3.2)
+    selenium-webdriver (4.3.0)
+      childprocess (>= 0.5, < 5.0)
+      rexml (~> 3.2, >= 3.2.5)
+      rubyzip (>= 1.2.2, < 3.0)
+      websocket (~> 1.0)
+    watir (7.1.0)
+      regexp_parser (>= 1.2, < 3)
+      selenium-webdriver (~> 4.0)
+    websocket (1.2.9)
+    yml_reader (0.7)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  page-object
+  rspec
+  selenium-webdriver
+
+BUNDLED WITH
+   2.3.7
