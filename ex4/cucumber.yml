@@ -1,0 +1,2 @@
+default: --publish-quiet
+make_html_report: --publish-quiet --format progress --format html --out ./HTML_REPORT/selenium_report.html

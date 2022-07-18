@@ -1,0 +1,9 @@
+source 'https://rubygems.org'
+
+group :test do
+  gem 'cucumber-ruby'
+  gem 'rspec'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'site_prism'
+end
