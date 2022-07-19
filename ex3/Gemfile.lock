@@ -47,7 +47,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  data_magic
   page-object
   rspec
   selenium-webdriver
