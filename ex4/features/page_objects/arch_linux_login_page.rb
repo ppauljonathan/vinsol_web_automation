@@ -11,7 +11,6 @@ require_relative './arch_linux_main_page.rb'
 #   end
 class ArchLinuxLoginPage < SitePrism::Page
   set_url 'https://bbs.archlinux.org/login.php'
-  set_url_matcher /bbs.archlinux.org\/login.php/
   element :username, 'input[name="req_username"]'
   element :password, 'input[name="req_password"]'
   element :submit_button, 'input[name="login"]'
